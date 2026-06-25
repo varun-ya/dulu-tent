@@ -1388,6 +1388,24 @@
             .nectar-post-grid.layout-stacked .nectar-post-grid-item .content .post-heading { font-size: 22px !important; line-height: 30px !important; }
         }
 
+    
+        /* Force remove hero bg/video */
+        #fws_6a3ce996a3e75 .nectar-video-wrap,
+        #fws_6a3ce996a3e75 .nectar-video-wrap video,
+        #fws_6a3ce996a3e75 .mobile-video-image {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }
+        #fws_6a3ce996a3e75 .row-bg-wrap .inner-wrap .row-bg {
+            background-image: none !important;
+            background-color: #0a0a12 !important;
+        }
+        #fws_6a3ce996a3e75 .row-bg-wrap .row-bg-overlay {
+            background: none !important;
+            opacity: 0 !important;
+        }
+
     </style>
 
             <link rel="stylesheet" id="nectar-header-layout-centered-logo-between-menu-alt-css"
@@ -5172,7 +5190,7 @@
                                     <div class="video-color-overlay row-bg-layer" data-color=""
                                         style="opacity: 0.7; clip-path: inset(0px);"></div>
                                     <div class="mobile-video-image"
-                                        style="background-image: url(https://sarahhaywood.com/wp-content/uploads/2026/01/sarah-haywood-luxury-weddings-1.jpg)">
+                                        style="background-image: none">
                                     </div>
 
                                     <div class="nectar-video-wrap row-bg-layer" data-bg-alignment=""
@@ -5180,10 +5198,10 @@
                                         <div class="nectar-video-inner">
                                             <video class="nectar-video-bg" width="1800" height="700" preload="auto"
                                                 loop="" muted="" playsinline=""
-                                                poster="https://sarahhaywood.com/wp-content/uploads/2026/01/sarah-haywood-luxury-weddings-1.jpg"
+                                                poster=""
                                                 style="visibility: visible; opacity: 1;">
                                                 <source
-                                                    src="https://player.vimeo.com/progressive_redirect/playback/1157547173/rendition/2160p/file.mp4%20%282160p%29.mp4?loc=external&amp;log_user=0&amp;signature=764d1fd267be0663217d2c3564aa1b2930a08b3132057a36623899386d150e9b"
+                                                    src=""
                                                     type="video/mp4">
                                             </video>
                                         </div>
