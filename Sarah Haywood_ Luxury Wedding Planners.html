@@ -1237,8 +1237,79 @@
             display: none !important;
             visibility: hidden !important;
         }
+    
+        /* ===== MOBILE RESPONSIVENESS - PREMIUM DARK MODE ===== */
+        @media only screen and (max-width: 999px) {
+            #header-outer {
+                padding: 12px 0 !important;
+                backdrop-filter: blur(24px) saturate(200%) !important;
+                -webkit-backdrop-filter: blur(24px) saturate(200%) !important;
+                background-color: rgba(10, 10, 18, 0.92) !important;
+            }
+            #logo { font-size: 18px !important; }
+            .xs-heading h1 { font-size: 13px !important; letter-spacing: 1.5px !important; }
+            .xs-heading h1::after { font-size: 10px !important; margin-top: 6px !important; }
+            .testimonial_slider blockquote p { font-size: 20px !important; line-height: 30px !important; padding: 0 10px !important; }
+            .testimonial_slider blockquote::before { width: 40px !important; }
+            .wpb_text_column p { font-size: 15px !important; line-height: 26px !important; }
+            .nectar-sticky-media-section__media-wrap,
+            .nectar-sticky-media-content__media-wrap { border-radius: 16px !important; box-shadow: 0 8px 32px rgba(0,0,0,0.4) !important; }
+            .wpb_row.bottom_margin_10pct { margin-bottom: 60px !important; }
+            .nectar-cta .link_wrap { padding: 12px 24px !important; font-size: 13px !important; }
+            div[data-style='minimal'] .toggle > .toggle-title a { padding: 20px 50px 20px 0 !important; font-size: 17px !important; line-height: 24px !important; }
+            div[data-style='minimal'] .toggle.open { padding-left: 14px !important; }
+            .nectar-post-grid-item .inner { border-radius: 16px !important; }
+            .nectar-post-grid.layout-stacked .nectar-post-grid-item .content .post-heading { max-width: 100% !important; font-size: 20px !important; line-height: 28px !important; }
+            #footer { padding-top: 60px !important; padding-bottom: 40px !important; }
+            .copyright ul { justify-content: center !important; text-align: center !important; }
+            h2 { font-size: 28px !important; line-height: 36px !important; }
+            h3 { font-size: 22px !important; line-height: 30px !important; }
+            img { max-width: 100% !important; height: auto !important; }
+            #slide-out-widget-area.fullscreen .inner .off-canvas-menu-container li a { font-size: 28px !important; line-height: 36px !important; }
+            .container-wrap { overflow-x: hidden !important; }
+            .contact-details h3 { font-size: 18px !important; }
+        }
+
+        @media only screen and (max-width: 690px) {
+            #logo { font-size: 16px !important; }
+            .xs-heading h1 { font-size: 11px !important; letter-spacing: 1.2px !important; }
+            .testimonial_slider blockquote p { font-size: 18px !important; line-height: 28px !important; }
+            .wpb_text_column p { font-size: 14px !important; line-height: 24px !important; }
+            h2 { font-size: 24px !important; line-height: 32px !important; }
+            h3 { font-size: 20px !important; line-height: 28px !important; }
+            .nectar-post-grid[data-grid-item-height='90vh'] .nectar-post-grid-item { min-height: 70vh !important; }
+            .nectar-post-grid.layout-stacked .nectar-post-grid-item .content { padding: 24px !important; }
+            .nectar-post-grid.layout-stacked .nectar-post-grid-item .content .post-heading { font-size: 18px !important; line-height: 26px !important; }
+            .nectar-cta .link_wrap { padding: 14px 28px !important; width: 100% !important; text-align: center !important; }
+            .wpb_row.bottom_margin_10pct { margin-bottom: 48px !important; }
+            .wpb_column.el_spacing_50px > .vc_column-inner > .wpb_wrapper > div:not(:last-child) { margin-bottom: 24px !important; }
+            div[data-style='minimal'] .toggle > .toggle-title a { font-size: 15px !important; padding: 16px 45px 16px 0 !important; }
+            #footer .footer-links ul li a { font-size: 16px !important; line-height: 36px !important; }
+            .nectar-sticky-media-content__media-wrap { border-radius: 12px !important; margin-bottom: 30px !important; }
+            #slide-out-widget-area.fullscreen .inner .off-canvas-menu-container li a { font-size: 24px !important; line-height: 32px !important; }
+            body, html { overflow-x: hidden !important; }
+            .nectar-sticky-media-section__media-wrap { border-radius: 12px !important; }
+        }
+
+        @media only screen and (min-width: 691px) and (max-width: 999px) {
+            #logo { font-size: 20px !important; }
+            .testimonial_slider blockquote p { font-size: 24px !important; line-height: 34px !important; }
+            .nectar-post-grid.layout-stacked .nectar-post-grid-item .content .post-heading { font-size: 24px !important; line-height: 32px !important; }
+            .nectar-sticky-media-section__media-wrap,
+            .nectar-sticky-media-content__media-wrap { border-radius: 20px !important; }
+            h2 { font-size: 34px !important; line-height: 42px !important; }
+        }
+
+        @media only screen and (max-height: 500px) and (orientation: landscape) {
+            .nectar-post-grid[data-grid-item-height='90vh'] .nectar-post-grid-item { min-height: 90vh !important; }
+            .wpb_row.vc_row-o-full-height { min-height: 100vh !important; }
+        }
+
+        .light h1, .light h2, .light h3, .light p { text-shadow: 0 1px 3px rgba(0,0,0,0.3) !important; }
+
     </style>
-    <link rel="stylesheet" id="nectar-header-layout-centered-logo-between-menu-alt-css"
+
+            <link rel="stylesheet" id="nectar-header-layout-centered-logo-between-menu-alt-css"
         href="./Sarah Haywood_ Luxury Wedding Planners_files/header-layout-centered-logo-between-menu-alt.css"
         media="all">
     <link rel="stylesheet" id="nectar-element-testimonial-css"
